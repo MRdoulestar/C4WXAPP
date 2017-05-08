@@ -1,0 +1,36 @@
+{
+	"login.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/login.css",
+			"css/mui.min.css",
+			"fonts/mui.ttf"
+		],
+		"refer": [
+			"pullrefresh_main.html",
+			"main.html"
+		]
+	},
+	"pullrefresh_main.html": {
+		"resources": [
+			"pullrefresh_sub.html",
+			"js/mui.min.js",
+			"css/mui.min.css"
+		],
+		"refer": [
+			"pullrefresh_sub.html"
+		]
+	},
+	"pullrefresh_sub.html": {
+		"resources": [
+			"fonts/mui.ttf"
+		]
+	},
+	"main.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"fonts/mui.ttf"
+		]
+	}
+}

@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<h1 class="mui-title">审核列表</h1>
+		</header>
+		<div class="mui-content">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell mui-collapse">
+					<a href="#" class="mui-navigate-right">面板</a>
+					<div class="mui-collapse-content">
+						<p>内容</p>
+					</div>
+				</li>
+				<li class="mui-table-view-cell mui-collapse ">
+					<a href="#" class="mui-navigate-right">面板</a>
+					<div class="mui-collapse-content">
+						<p>内容</p>
+					</div>
+				</li>
+			</ul>
+			<button type="button" class="mui-btn mui-btn-green" onclick="showMenu();">显示</button>
+			
+			<div id="sheet1" class="mui-popover mui-popover-bottom mui-popover-action ">
+			    <!-- 可选择菜单 -->
+			    <ul class="mui-table-view">
+			      <li class="mui-table-view-cell">
+			        <a href="#">菜单1</a>
+			      </li>
+			      <li class="mui-table-view-cell">
+			        <a href="#">菜单2</a>
+			      </li>
+			    </ul>
+			    <!-- 取消菜单 -->
+			    <ul class="mui-table-view">
+			      <li class="mui-table-view-cell">
+			        <a href="#sheet1"><b>取消</b></a>
+			      </li>
+			    </ul>
+			</div>
+		</div>
+		
+		
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			mui.plusReady(function(){
+				//关闭等待框
+				plus.nativeUI.closeWaiting();
+				//显示页面
+				var self=plus.webview.currentWebview();
+				self.show("zoom-fade-out",350);
+			});
+			function showMenu(){
+				//mui("#sheet1").popover('toggle');
+				mui.toast("welcome");
+			}
+		</script>
+	</body>
+
+</html>
